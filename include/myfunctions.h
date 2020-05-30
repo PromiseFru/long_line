@@ -4,6 +4,6 @@
     extern char square[10];
     void board();
     int checkwin();
-    int searcharr();
+    int searcharr(char find);
 
 #endif // MYFUNCTIONS_H

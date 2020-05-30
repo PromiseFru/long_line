@@ -46,21 +46,22 @@ int checkwin(){
 		return -1;
 }
 
-int searcharr(){
+int searcharr(char find){
 	//TODO search Square[] for 'X' AND 'O' values
 	int i;
 	int n = sizeof(square)/sizeof(square[0]);
-	int p1 = 0;
-	int p2 = 0;
+	int count = 0;
 	for(i=0; i<n; i++){
-		if(square[i] == 'X'){ 
-			p1++;
+		if(square[i] == find){ 
+			count++;
 		} 
-		if(square[i] == 'O'){
-			p2++;
-		}
-	}
-
+	}	
+	
 	//TODO get return values
+	if(count >= 3){
+		return 1;
+	}else{
+		return 0;
+	}
 	
 }
