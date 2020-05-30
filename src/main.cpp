@@ -19,6 +19,7 @@ int main(){
 		// Draw board
 		board();
 		cout << endl;
+		// cout << searcharr() << endl;
 		cout << "Player " << player << " enter number" << endl;
 		cin >> choice;
 
