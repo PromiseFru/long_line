@@ -6,7 +6,7 @@ using namespace std;
 int main(){
 
 	int player = 1;
-	int choice;
+	int choice,from,to;
 	char mark;
 
 	// game start
@@ -20,8 +20,23 @@ int main(){
 		board();
 		cout << endl;
 		cout << searcharr('X') << endl;
-		cout << "Player " << player << " enter number" << endl;
-		cin >> choice;
+		if(searcharr('X') == 1 && player == 1){
+			cout << "Player " << player << " move mark" << endl;
+			cout << "From index ";
+			cin >> from;
+			cout << "To index ";
+			cin >> to;
+		}
+		if(searcharr('O') == 1 && player == 2){
+			cout << "Player " << player << " move mark" << endl;
+			cout << "From index ";
+			cin >> from;
+			cout << "To index ";
+			cin >> to;
+		}else{
+			cout << "Player " << player << " enter number" << endl;
+			cin >> choice;
+		}
 
 		// write board
 		if (choice == 1 && square[1] == '1')
