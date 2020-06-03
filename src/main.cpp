@@ -20,23 +20,27 @@ int main(){
 		board();
 		cout << endl;
 		cout << searcharr('X') << endl;
-		if(searcharr('X') == 1 && player == 1){
+		while(searcharr('X') == 1 && player == 1){
 			cout << "Player " << player << " move mark" << endl;
 			cout << "From index ";
 			cin >> from;
 			cout << "To index ";
 			cin >> to;
+
+			player++;
 		}
-		if(searcharr('O') == 1 && player == 2){
+		while(searcharr('O') == 1 && player == 2){
 			cout << "Player " << player << " move mark" << endl;
 			cout << "From index ";
 			cin >> from;
 			cout << "To index ";
 			cin >> to;
-		}else{
-			cout << "Player " << player << " enter number" << endl;
-			cin >> choice;
+
+			player++;
 		}
+
+		cout << "Player " << player << " enter number" << endl;
+		cin >> choice;
 
 		// write board
 		if (choice == 1 && square[1] == '1')
@@ -72,9 +76,9 @@ int main(){
 		player --;
 		cout << "Player " << player << " Wins!" << endl;
 	}
-	if(checkwin() == 0){
-		cout << "Match drawn" << endl;
-	}
+	// if(checkwin() == 0){
+	// 	cout << "Match drawn" << endl;
+	// }
 
 	return 0;
 }
