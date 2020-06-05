@@ -16,6 +16,7 @@ int main(){
 		// player mark selector
 		mark = (player == 1) ? 'X':'O';
 
+		cout << "Player 1 = X	Player 2 = O" << endl;
 		// Draw board
 		board();
 		cout << endl;
