@@ -19,7 +19,6 @@ int main(){
 		// Draw board
 		board();
 		cout << endl;
-		cout << searcharr('X') << endl;
 		if(searcharr(mark) == 1){
 			cout << "Player " << player << " move mark" << endl;
 			cout << "From index ";
