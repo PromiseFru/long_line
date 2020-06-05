@@ -7,6 +7,9 @@ char square[10] = {'0','1','2','3','4','5','6','7','8','9'};
 
 void board(){
 	system("clear");
+
+	cout << "Player 1 = X	Player 2 = O" << endl;
+
 	cout << "_____ _____ _____" << endl;
 	for(int i=1; i<=9; i+=3){
 		cout << "     |     |     |" << endl;
