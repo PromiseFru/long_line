@@ -51,12 +51,38 @@ int main(){
 			square[8] = mark;
 		else if (choice == 9 && square[9] == '9')
 			square[9] = mark;
-		else if (from == 1 && to == 2 && square[1] == mark && square[2] == '2')
-		{
+		else if (from == 1 && to == 2 && square[1] == mark && square[2] == '2'){
 			square[1] = '1';
 			square[2] = mark;
 		}
-		
+		else if (from == 1 && to == 3 && square[1] == mark && square[3] == '3'){
+			square[1] = '1';
+			square[3] = mark;
+		}
+		else if (from == 1 && to == 4 && square[1] == mark && square[4] == '4'){
+			square[1] = '1';
+			square[4] = mark;
+		}
+		else if (from == 1 && to == 5 && square[1] == mark && square[5] == '5'){
+			square[1] = '1';
+			square[5] = mark;
+		}
+		else if (from == 1 && to == 6 && square[1] == mark && square[6] == '6'){
+			square[1] = '1';
+			square[6] = mark;
+		}
+		else if (from == 1 && to == 7 && square[1] == mark && square[7] == '7'){
+			square[1] = '1';
+			square[7] = mark;
+		}
+		else if (from == 1 && to == 8 && square[1] == mark && square[8] == '8'){
+			square[1] = '1';
+			square[8] = mark;
+		}
+		else if (from == 1 && to == 9 && square[1] == mark && square[9] == '9'){
+			square[1] = '1';
+			square[9] = mark;
+		}
 		else
 		{
 			cout<<"Invalid move "<<endl;
